@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f0878abc8b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="store.css">
+    <link href='https://css.gg/apple-watch.css' rel='stylesheet'>
+    <title>QH Store</title>
+</head>
+<body>
+    <header>
+        <img src="picture/bannerTop.png" alt="">
+    </header>
+    <nav>
+      <div class="container">
+        <ul>
+            <li><a onclick="alert('Tính năng này đang bảo trì')" href=""><img style="width:150px; height:70px" src="picture/logostoreblack.png" alt=""></a></li>
+            <li><a onclick="alert('Tính năng này đang bảo trì')" href="">Huế<i class="fa-solid fa-caret-down"></i></a></li>
+            <li><input oninput="search()" type="text" placeholder="Bạn tìm gì..." id="search"><i class="fa-solid fa-magnifying-glass"></i></li>
+            <li><a onclick="alert('Tính năng này đang bảo trì')" href=""><button><i class="fa-solid fa-cart-shopping"></i> Giỏ Hàng</button></a></li>
+            <li><a onclick="alert('Tính năng này đang bảo trì')" href="">Lịch sử <br> đơn hàng</a></li>
+            <li><a onclick="alert('Tính năng này đang bảo trì')" href=""><span class="point-content"><span class="point"></span></span> Mua thẻ nạp ngay!</a></li>
+            <li><a onclick="alert('Tính năng này đang bảo trì')" href="">24h công nghệ</a></li>
+            <li><a onclick="alert('Tính năng này đang bảo trì')" href="">Hỏi đáp</a></li>
+            <li><a onclick="alert('Tính năng này đang bảo trì')" href="">Game App </a></li>
+        </ul>
+      </div>
+    </nav>
+    <section class="menuBar">
+      <div class="container">
+        <div class="menuBarContent">
+          <ul>
+            <li><a onclick="alert('Tính năng này đang bảo trì')" href=""><i class="fa-solid fa-mobile-screen-button"></i>Điện Thoại</a></li>
+            <li><a onclick="alert('Tính năng này đang bảo trì')" href=""><i class="fa-solid fa-laptop"></i>Laptop</a></li>
+            <li><a onclick="alert('Tính năng này đang bảo trì')" href=""><i class="fa-solid fa-tablet-screen-button"></i>Tablet</a></li>
+            <li><a onclick="alert('Tính năng này đang bảo trì')" href=""><i class="fa-solid fa-headphones"></i>Phụ Kiện <i style="margin-left: 3px;" class="fa-solid fa-caret-down"></i></a></li>
+            <li><a onclick="alert('Tính năng này đang bảo trì')" href=""><i class="fa-solid fa-watch-smart"></i>Đồng Hồ</a></li>
+            <li><a onclick="alert('Tính năng này đang bảo trì')" href=""><i class="fa-solid fa-watch-smart"></i>Đồng Hồ thời trang</a></li>
+            <li><a onclick="alert('Tính năng này đang bảo trì')" href=""><i class="fa-solid fa-computer"></i>Máy tính</a></li>
+            <li><a onclick="alert('Tính năng này đang bảo trì')" href="">Máy cũ giá rẻ</a></li>
+            <li><a onclick="alert('Tính năng này đang bảo trì')" href="">Sim thẻ cào</a></li>
+            <li><a onclick="alert('Tính năng này đang bảo trì')" href="">Trả góp - Điện nước</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <div class="addProduct">
+      <table class="addTableProduct">
+        <tbody>
+          <tr>
+            <td>Tên sản phẩm</td>
+            <td><input type="text" id="addProduct" class="addInput" placeholder="Tên sản phẩm"></td>
+            <td>Hình ảnh sản phẩm</td>
+            <td><input type="text" id="addImg" class="addInput" placeholder="Hình sản phẩm"></td>
+          </tr>
+          <tr>
+          </tr>
+          <tr>
+            <td>Giá sản phẩm</td>
+            <td><input type="number" id="addMoney" min="0" class="addInput" placeholder="Giá sản phẩm"></td>
+            <td>Loại sản phẩm</td>
+            <td><select name="" id="addType" class="addInput">
+              <option value="">--Chọn loại sản phẩm--</option>
+              <option value="Laptop">Laptop</option>
+              <option value="Smartphone">Smartphone</option>
+              <option value="Tablet">Tablet</option>
+              <option value="Watch">Watch</option>
+            </select></td>
+            <td><button class="addButton" id="add" onclick="add()">Thêm sản phẩm</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="left"></div>
+    <div class="statusProduct" id="tableStatus">
+      <table class="tableStatus">
+        <thead>
+          <tr>
+            <td>Tên sản phẩm</td>
+            <td>Ảnh sản phẩm</td>
+            <td>Giá sản phẩm</td>
+            <td>Loại sản phẩm</td>
+            <td>Hành động</td>
+          </tr>
+        </thead>
+        <tbody id="tbody">
+            </tr>
+        </tbody>
+    </table>
+    </div>
+
+    
+
+    <script src="store.js"></script>
+</body>
+</html>
