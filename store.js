@@ -111,7 +111,7 @@ function del(idProduct) {
   let del = products.findIndex(function (pro) {
     return pro.id == idProduct;
   });
-  let confirmed = window.confirm(`Are sure to want to remove?`);
+  let confirmed = window.confirm(`Bạn chắc chắn xóa sản phẩm này?`);
   if (confirmed == false) {
     return;
   } else {
